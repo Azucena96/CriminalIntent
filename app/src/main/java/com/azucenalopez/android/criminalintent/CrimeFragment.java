@@ -43,10 +43,11 @@ public class CrimeFragment  extends Fragment {
             @NonNull LayoutInflater inflater,
             @Nullable ViewGroup container,
             @Nullable Bundle savedInstanceState) {
-        View v = inflater.inflate(layout.fragment_crime, container, false);
+        View v = inflater.inflate(layout.fragment_, container, false);
         mTitleField = (EditText) v.findViewById(R.id.crime_title);
         mDateButton = (Button) v.findViewById(R.id.crime_date);
         mSolvedCheckBox = (CheckBox) v.findViewById(R.id.crime_solved);
+
 
         mDateButton.setText(mCrime.getDate().toString());
         mDateButton.setEnabled(false);
